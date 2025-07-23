@@ -23,6 +23,6 @@ test('Enter invalid hospital type and capture message', async ({ page }) => {
         const errorMessage = await hospitalPage.enterInvalidSearchAndCaptureMessage('%#^&^*');
         expect(errorMessage.trim()).toBe("We couldn't find any doctors for you");
     } catch (error) {
-        console.log('Error during Enter invalid hospital type and capture message');
+        console.log('Error during entering invalid hospital type and capture message');
     }
 });
